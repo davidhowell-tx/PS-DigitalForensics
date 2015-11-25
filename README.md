@@ -13,5 +13,6 @@ Information regarding data structures have been pulled from a number of sources 
 
 # Thanks
 Thanks to Harlan Carvey and his RegRipper tool for providing a lot of help working through the data structures (and for providing a great tool): https://github.com/keydet89/RegRipp2.8
+Thanks to the Forensics Wiki: http://forensicswiki.org/wiki/Main_Page
 
 
