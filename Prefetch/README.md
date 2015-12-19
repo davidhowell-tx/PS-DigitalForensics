@@ -1,9 +1,9 @@
 # Invoke-PrefetchParser
 Invoke-PrefetchParser is my attempt to parse information out of Prefetch files.
 
-I've performed only limited testing with Windows 8 and PowerShell version 4 at this time.
+I've performed only limited testing with Windows 8.1 and Windows 7 and PowerShell version 4 at this time.
 
-Currently hoping to get a copy of some prefetch files from WinXP, Vista, 7, and 10 to extend testing.
+Currently hoping to get a copy of some prefetch files from WinXP, Vista, and 10 to extend testing.
 
 # Usage
 .\Invoke-PrefetchParser.ps1 -Path C:\Windows\Prefetch\executable-hash.pf
@@ -12,6 +12,8 @@ Get-ChildItem -Path C:\Windows\Prefetch -Filter *.pf | ForEach-Object { .\Invoke
 
 # Thanks
 Info regarding Prefetch data structures was pulled from the following articles:
+
+http://www.forensicswiki.org/wiki/Windows_Prefetch_File_Format
 
 Thanks to Yogesh Khatri for this info.
 
