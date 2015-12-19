@@ -10,6 +10,9 @@ Currently hoping to get a copy of some prefetch files from WinXP, Vista, and 10 
 
 Get-ChildItem -Path C:\Windows\Prefetch -Filter *.pf | ForEach-Object { .\Invoke-PrefetchParser.ps1 -FilePath $_.FullName }
 
+# Notes
+I don't parse all of the availabe information in the prefetch file for output, though the script does read through the structures as if it were going to parse each piece of information, with a lot of information being sent to a null output (look for Out-Null in the script).  I only did this for completeness sake, and just in case anyone wants to modify this script to parse everything it should be a little bit easier.
+
 # Thanks
 Info regarding Prefetch data structures was pulled from the following articles:
 
