@@ -6,7 +6,7 @@
 
 ## File Header - 84 Bytes
 | Offset | Length | Value    | Value Format            | Notes |
-| ------ | ------ | -------- | ----------------------- |       |
+| ------ | ------ | -------- | ----------------------- | ----- |
 | 0      | 4      | 11000000 | Hexadecimal             | Format Version |
 | 4      | 4      | SCCA     | ASCII                   | Signature |
 | 8      | 4      | 0F000000 | Hexadecimal             | Unknown Purpose |
@@ -34,6 +34,7 @@
 
 ## Metrics Array
 Metrics Entry Records are 20 bytes each. Offsets are shown from the start of the metrics entry.
+
 | Offset | Length | Value | Value Format            | Notes  |
 | ------ | ------ | ----- | ----------------------- | ------ |
 | 0      | 4      |       |                         | Unknown |
@@ -44,6 +45,7 @@ Metrics Entry Records are 20 bytes each. Offsets are shown from the start of the
 
 ## Trace Chains Array
 Trace Chains Entry Records are 12 bytes each. Offsets are shown from the start of the Trace Chains entry record.
+
 | Offset | Length | Value Format | Notes |
 | ------ | ------ | ------------ | ----- |
 | 0      | 4      |              | Next array entry index |
@@ -85,6 +87,7 @@ NTFS File reference entries are 8 bytes in size.
 An array of Unicode directory strings associated with files accessed by the executable. The number of string entries is stored in the Volume Information array.
 
 Each directory string entry has the following structure:
+
 | Offset | Length | Value Format            | Notes |
 | ------ | ------ | ----------------------- | ----- |
 | 0      | 2      | Unsigned 16-bit Integer | Length of directory string in Unicode characters |
@@ -95,7 +98,7 @@ Each directory string entry has the following structure:
 
 ## File Header - 84 Bytes
 | Offset | Length | Value    | Value Format            | Notes |
-| ------ | ------ | -------- | ----------------------- |       |
+| ------ | ------ | -------- | ----------------------- | ----- |
 | 0      | 4      | 11000000 | Hexadecimal             | Format Version |
 | 4      | 4      | SCCA     | ASCII                   | Signature |
 | 8      | 4      | 0F000000 | Hexadecimal             | Unknown Purpose |
@@ -125,6 +128,7 @@ Each directory string entry has the following structure:
 
 ## Metrics Array
 Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the metrics entry.
+
 | Offset | Length | Value | Value Format            | Notes  |
 | ------ | ------ | ----- | ----------------------- | ------ |
 | 0      | 4      |       |                         | Unknown |
@@ -137,6 +141,7 @@ Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the
 
 ## Trace Chains Array
 Trace Chains Entry Records are 12 bytes each. Offsets are shown from the start of the Trace Chains entry record.
+
 | Offset | Length | Value Format | Notes |
 | ------ | ------ | ------------ | ----- |
 | 0      | 4      |              | Next array entry index |
@@ -183,6 +188,7 @@ NTFS File reference entries vary in size.
 An array of Unicode directory strings associated with files accessed by the executable. The number of string entries is stored in the Volume Information array.
 
 Each directory string entry has the following structure:
+
 | Offset | Length | Value Format            | Notes |
 | ------ | ------ | ----------------------- | ----- |
 | 0      | 2      | Unsigned 16-bit Integer | Length of directory string in Unicode characters |
@@ -194,7 +200,7 @@ Each directory string entry has the following structure:
 
 ## File Header - 84 Bytes
 | Offset | Length | Value    | Value Format            | Notes |
-| ------ | ------ | -------- | ----------------------- |       |
+| ------ | ------ | -------- | ----------------------- | ----- |
 | 0      | 4      | 11000000 | Hexadecimal             | Format Version |
 | 4      | 4      | SCCA     | ASCII                   | Signature |
 | 8      | 4      | 0F000000 | Hexadecimal             | Unknown Purpose |
@@ -232,6 +238,7 @@ Each directory string entry has the following structure:
 
 ## Metrics Array
 Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the metrics entry.
+
 | Offset | Length | Value | Value Format            | Notes  |
 | ------ | ------ | ----- | ----------------------- | ------ |
 | 0      | 4      |       |                         | Unknown |
@@ -244,6 +251,7 @@ Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the
 
 ## Trace Chains Array
 Trace Chains Entry Records are 12 bytes each. Offsets are shown from the start of the Trace Chains entry record.
+
 | Offset | Length | Value Format | Notes |
 | ------ | ------ | ------------ | ----- |
 | 0      | 4      |              | Next array entry index |
@@ -290,6 +298,7 @@ NTFS File reference entries vary in size.
 An array of Unicode directory strings associated with files accessed by the executable. The number of string entries is stored in the Volume Information array.
 
 Each directory string entry has the following structure:
+
 | Offset | Length | Value Format            | Notes |
 | ------ | ------ | ----------------------- | ----- |
 | 0      | 2      | Unsigned 16-bit Integer | Length of directory string in Unicode characters |
@@ -301,7 +310,7 @@ Each directory string entry has the following structure:
 
 ## File Header - 84 Bytes
 | Offset | Length | Value    | Value Format            | Notes |
-| ------ | ------ | -------- | ----------------------- |       |
+| ------ | ------ | -------- | ----------------------- | ----- |
 | 0      | 4      | 11000000 | Hexadecimal             | Format Version |
 | 4      | 4      | SCCA     | ASCII                   | Signature |
 | 8      | 4      | 0F000000 | Hexadecimal             | Unknown Purpose |
@@ -339,6 +348,7 @@ Each directory string entry has the following structure:
 
 ## Metrics Array
 Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the metrics entry.
+
 | Offset | Length | Value | Value Format            | Notes  |
 | ------ | ------ | ----- | ----------------------- | ------ |
 | 0      | 4      |       |                         | Unknown |
@@ -351,6 +361,7 @@ Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the
 
 ## Trace Chains Array
 Trace Chains Entry Records are 8 bytes each. Offsets are shown from the start of the Trace Chains entry record.
+
 | Offset | Length | Value Format | Notes |
 | ------ | ------ | ------------ | ----- |
 | 0      | 4      |              | Total block load count |
@@ -396,6 +407,7 @@ NTFS File reference entries vary in size.
 An array of Unicode directory strings associated with files accessed by the executable. The number of string entries is stored in the Volume Information array.
 
 Each directory string entry has the following structure:
+
 | Offset | Length | Value Format            | Notes |
 | ------ | ------ | ----------------------- | ----- |
 | 0      | 2      | Unsigned 16-bit Integer | Length of directory string in Unicode characters |
