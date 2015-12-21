@@ -16,32 +16,32 @@
 | 80     | 4      |          |                         | Unknown (flags?) |
 
 ## File Information - 68 Bytes
-| Offset | Length | Value | Value Format                       | Notes |
-| ------ | ------ | ----- | ---------------------------------- | ----- |
-| 84     | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
-| 88     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
-| 92     | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
-| 96     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
-| 100    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
-| 104    | 4      |       | Unsigned 32-bit Integer            | Length of Filename Strings Array |
-| 108    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
-| 112    | 4      |       | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
-| 116    | 4      |       | Unsigned 32-bit Integer            | Length of Volume Information Array |
-| 120    | 8      |       | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
-| 128    | 16     |       |                                    | Unknown |
-| 144    | 4      |       | Unsigned 32-bit Integer            | Execution Count |
-| 148    | 4      |       |                                    | Unknown |
+| Offset | Length | Value Format                       | Notes |
+| ------ | ------ | ---------------------------------- | ----- |
+| 84     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
+| 88     | 4      | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
+| 92     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
+| 96     | 4      | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
+| 100    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
+| 104    | 4      | Unsigned 32-bit Integer            | Length of Filename Strings Array |
+| 108    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
+| 112    | 4      | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
+| 116    | 4      | Unsigned 32-bit Integer            | Length of Volume Information Array |
+| 120    | 8      | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
+| 128    | 16     |                                    | Unknown |
+| 144    | 4      | Unsigned 32-bit Integer            | Execution Count |
+| 148    | 4      |                                    | Unknown |
 
 ## Metrics Array
 Metrics Entry Records are 20 bytes each. Offsets are shown from the start of the metrics entry.
 
-| Offset | Length | Value | Value Format            | Notes  |
-| ------ | ------ | ----- | ----------------------- | ------ |
-| 0      | 4      |       |                         | Unknown |
-| 4      | 4      |       |                         | Unknown |
-| 8      | 4      |       | Unsigned 32-bit Integer | Filename String Offset |
-| 12     | 4      |       | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
-| 16     | 4      |       |                         | Unknown |
+| Offset | Length | Value Format            | Notes  |
+| ------ | ------ | ----------------------- | ------ |
+| 0      | 4      |                         | Unknown |
+| 4      | 4      |                         | Unknown |
+| 8      | 4      | Unsigned 32-bit Integer | Filename String Offset |
+| 12     | 4      | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
+| 16     | 4      |                         | Unknown |
 
 ## Trace Chains Array
 Trace Chains Entry Records are 12 bytes each. Offsets are shown from the start of the Trace Chains entry record.
@@ -108,36 +108,36 @@ Each directory string entry has the following structure:
 | 80     | 4      |          |                         | Unknown (flags?) |
 
 ## File Information - 156 Bytes
-| Offset | Length | Value | Value Format                       | Notes |
-| ------ | ------ | ----- | ---------------------------------- | ----- |
-| 84     | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
-| 88     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
-| 92     | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
-| 96     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
-| 100    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
-| 104    | 4      |       | Unsigned 32-bit Integer            | Length of Filename Strings Array |
-| 108    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
-| 112    | 4      |       | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
-| 116    | 4      |       | Unsigned 32-bit Integer            | Length of Volume Information Array |
-| 120    | 8      |       |                                    | Unknown |
-| 128    | 8      |       | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
-| 136    | 16     |       |                                    | Unknown |
-| 152    | 4      |       | Unsigned 32-bit Integer            | Execution Count |
-| 156    | 80     |       |                                    | Unknown |
+| Offset | Length | Value Format                       | Notes |
+| ------ | ------ | ---------------------------------- | ----- |
+| 84     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
+| 88     | 4      | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
+| 92     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
+| 96     | 4      | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
+| 100    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
+| 104    | 4      | Unsigned 32-bit Integer            | Length of Filename Strings Array |
+| 108    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
+| 112    | 4      | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
+| 116    | 4      | Unsigned 32-bit Integer            | Length of Volume Information Array |
+| 120    | 8      |                                    | Unknown |
+| 128    | 8      | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
+| 136    | 16     |                                    | Unknown |
+| 152    | 4      | Unsigned 32-bit Integer            | Execution Count |
+| 156    | 80     |                                    | Unknown |
 | 
 
 ## Metrics Array
 Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the metrics entry.
 
-| Offset | Length | Value | Value Format            | Notes  |
-| ------ | ------ | ----- | ----------------------- | ------ |
-| 0      | 4      |       |                         | Unknown |
-| 4      | 4      |       |                         | Unknown |
-| 8      | 4      |       |                         | Unknown |
-| 12     | 4      |       | Unsigned 32-bit Integer | Filename String Offset |
-| 16     | 4      |       | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
-| 20     | 4      |       |                         | Unknown |
-| 24     | 8      |       |                         | NTFS File Reference of the Filename |
+| Offset | Length | Value Format            | Notes  |
+| ------ | ------ | ----------------------- | ------ |
+| 0      | 4      |                         | Unknown |
+| 4      | 4      |                         | Unknown |
+| 8      | 4      |                         | Unknown |
+| 12     | 4      | Unsigned 32-bit Integer | Filename String Offset |
+| 16     | 4      | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
+| 20     | 4      |                         | Unknown |
+| 24     | 8      |                         | NTFS File Reference of the Filename |
 
 ## Trace Chains Array
 Trace Chains Entry Records are 12 bytes each. Offsets are shown from the start of the Trace Chains entry record.
@@ -210,44 +210,44 @@ Each directory string entry has the following structure:
 | 80     | 4      |          |                         | Unknown (flags?) |
 
 ## File Information - 220 Bytes
-| Offset | Length | Value | Value Format                       | Notes |
-| ------ | ------ | ----- | ---------------------------------- | ----- |
-| 84     | 4      | 304   | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
-| 88     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
-| 92     | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
-| 96     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
-| 100    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
-| 104    | 4      |       | Unsigned 32-bit Integer            | Length of Filename Strings Array |
-| 108    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
-| 112    | 4      |       | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
-| 116    | 4      |       | Unsigned 32-bit Integer            | Length of Volume Information Array |
-| 120    | 8      |       |                                    | Unknown |
-| 128    | 8      |       | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
-| 136    | 8      |       | Unsigned 64-bit Integer Epoch Time | 2nd Last Execution Time |
-| 144    | 8      |       | Unsigned 64-bit Integer Epoch Time | 3rd Last Execution Time |
-| 152    | 8      |       | Unsigned 64-bit Integer Epoch Time | 4th Last Execution Time |
-| 160    | 8      |       | Unsigned 64-bit Integer Epoch Time | 5th Last Execution Time |
-| 168    | 8      |       | Unsigned 64-bit Integer Epoch Time | 6th Last Execution Time |
-| 176    | 8      |       | Unsigned 64-bit Integer Epoch Time | 7th Last Execution Time |
-| 184    | 8      |       | Unsigned 64-bit Integer Epoch Time | 8th Last Execution Time |
-| 192    | 16     |       |                                    | Unknown |
-| 208    | 4      |       | Unsigned 32-bit Integer            | Execution Count |
-| 212    | 4      |       |                                    | Unknown |
-| 216    | 4      |       |                                    | Unknown |
-| 220    | 84     |       |                                    | Unknown |
+| Offset | Length | Value Format                       | Notes |
+| ------ | ------ | ---------------------------------- | ----- |
+| 84     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
+| 88     | 4      | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
+| 92     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
+| 96     | 4      | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
+| 100    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
+| 104    | 4      | Unsigned 32-bit Integer            | Length of Filename Strings Array |
+| 108    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
+| 112    | 4      | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
+| 116    | 4      | Unsigned 32-bit Integer            | Length of Volume Information Array |
+| 120    | 8      |                                    | Unknown |
+| 128    | 8      | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
+| 136    | 8      | Unsigned 64-bit Integer Epoch Time | 2nd Last Execution Time |
+| 144    | 8      | Unsigned 64-bit Integer Epoch Time | 3rd Last Execution Time |
+| 152    | 8      | Unsigned 64-bit Integer Epoch Time | 4th Last Execution Time |
+| 160    | 8      | Unsigned 64-bit Integer Epoch Time | 5th Last Execution Time |
+| 168    | 8      | Unsigned 64-bit Integer Epoch Time | 6th Last Execution Time |
+| 176    | 8      | Unsigned 64-bit Integer Epoch Time | 7th Last Execution Time |
+| 184    | 8      | Unsigned 64-bit Integer Epoch Time | 8th Last Execution Time |
+| 192    | 16     |                                    | Unknown |
+| 208    | 4      | Unsigned 32-bit Integer            | Execution Count |
+| 212    | 4      |                                    | Unknown |
+| 216    | 4      |                                    | Unknown |
+| 220    | 84     |                                    | Unknown |
 
 ## Metrics Array
 Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the metrics entry.
 
-| Offset | Length | Value | Value Format            | Notes  |
-| ------ | ------ | ----- | ----------------------- | ------ |
-| 0      | 4      |       |                         | Unknown |
-| 4      | 4      |       |                         | Unknown |
-| 8      | 4      |       |                         | Unknown |
-| 12     | 4      |       | Unsigned 32-bit Integer | Filename String Offset |
-| 16     | 4      |       | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
-| 20     | 4      |       |                         | Unknown |
-| 24     | 8      |       |                         | NTFS File Reference of the Filename |
+| Offset | Length | Value Format            | Notes  |
+| ------ | ------ | ----------------------- | ------ |
+| 0      | 4      |                         | Unknown |
+| 4      | 4      |                         | Unknown |
+| 8      | 4      |                         | Unknown |
+| 12     | 4      | Unsigned 32-bit Integer | Filename String Offset |
+| 16     | 4      | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
+| 20     | 4      |                         | Unknown |
+| 24     | 8      |                         | NTFS File Reference of the Filename |
 
 ## Trace Chains Array
 Trace Chains Entry Records are 12 bytes each. Offsets are shown from the start of the Trace Chains entry record.
@@ -320,44 +320,44 @@ Each directory string entry has the following structure:
 | 80     | 4      |          |                         | Unknown (flags?) |
 
 ## File Information - 224 Bytes
-| Offset | Length | Value | Value Format                       | Notes |
-| ------ | ------ | ----- | ---------------------------------- | ----- |
-| 84     | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
-| 88     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
-| 92     | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
-| 96     | 4      |       | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
-| 100    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
-| 104    | 4      |       | Unsigned 32-bit Integer            | Length of Filename Strings Array |
-| 108    | 4      |       | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
-| 112    | 4      |       | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
-| 116    | 4      |       | Unsigned 32-bit Integer            | Length of Volume Information Array |
-| 120    | 8      |       |                                    | Unknown |
-| 128    | 8      |       | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
-| 136    | 8      |       | Unsigned 64-bit Integer Epoch Time | 2nd Last Execution Time |
-| 144    | 8      |       | Unsigned 64-bit Integer Epoch Time | 3rd Last Execution Time |
-| 152    | 8      |       | Unsigned 64-bit Integer Epoch Time | 4th Last Execution Time |
-| 160    | 8      |       | Unsigned 64-bit Integer Epoch Time | 5th Last Execution Time |
-| 168    | 8      |       | Unsigned 64-bit Integer Epoch Time | 6th Last Execution Time |
-| 176    | 8      |       | Unsigned 64-bit Integer Epoch Time | 7th Last Execution Time |
-| 184    | 8      |       | Unsigned 64-bit Integer Epoch Time | 8th Last Execution Time |
-| 192    | 16     |       |                                    | Unknown |
-| 208    | 4      |       | Unsigned 32-bit Integer            | Execution Count |
-| 212    | 4      |       |                                    | Unknown |
-| 216    | 4      |       |                                    | Unknown |
-| 220    | 88     |       |                                    | Unknown |
+| Offset | Length | Value Format                       | Notes |
+| ------ | ------ | ---------------------------------- | ----- |
+| 84     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Metrics Array |
+| 88     | 4      | Unsigned 32-bit Integer            | Number of entries in Metrics Array |
+| 92     | 4      | Unsigned 32-bit Integer            | Offset from start of file to Trace Chains Array |
+| 96     | 4      | Unsigned 32-bit Integer            | Number of entries in Trace Chains Array |
+| 100    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Filename Strings Array |
+| 104    | 4      | Unsigned 32-bit Integer            | Length of Filename Strings Array |
+| 108    | 4      | Unsigned 32-bit Integer            | Offset from start of file to Volume Information Array |
+| 112    | 4      | Unsigned 32-bit Integer            | Number of entries in Volume Information Array |
+| 116    | 4      | Unsigned 32-bit Integer            | Length of Volume Information Array |
+| 120    | 8      |                                    | Unknown |
+| 128    | 8      | Unsigned 64-bit Integer Epoch Time | Last Execution Time |
+| 136    | 8      | Unsigned 64-bit Integer Epoch Time | 2nd Last Execution Time |
+| 144    | 8      | Unsigned 64-bit Integer Epoch Time | 3rd Last Execution Time |
+| 152    | 8      | Unsigned 64-bit Integer Epoch Time | 4th Last Execution Time |
+| 160    | 8      | Unsigned 64-bit Integer Epoch Time | 5th Last Execution Time |
+| 168    | 8      | Unsigned 64-bit Integer Epoch Time | 6th Last Execution Time |
+| 176    | 8      | Unsigned 64-bit Integer Epoch Time | 7th Last Execution Time |
+| 184    | 8      | Unsigned 64-bit Integer Epoch Time | 8th Last Execution Time |
+| 192    | 16     |                                    | Unknown |
+| 208    | 4      | Unsigned 32-bit Integer            | Execution Count |
+| 212    | 4      |                                    | Unknown |
+| 216    | 4      |                                    | Unknown |
+| 220    | 88     |                                    | Unknown |
 
 ## Metrics Array
 Metrics Entry Records are 32 bytes each. Offsets are shown from the start of the metrics entry.
 
-| Offset | Length | Value | Value Format            | Notes  |
-| ------ | ------ | ----- | ----------------------- | ------ |
-| 0      | 4      |       |                         | Unknown |
-| 4      | 4      |       |                         | Unknown |
-| 8      | 4      |       |                         | Unknown |
-| 12     | 4      |       | Unsigned 32-bit Integer | Filename String Offset |
-| 16     | 4      |       | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
-| 20     | 4      |       |                         | Unknown |
-| 24     | 8      |       |                         | NTFS File Reference of the Filename |
+| Offset | Length | Value Format            | Notes  |
+| ------ | ------ | ----------------------- | ------ |
+| 0      | 4      |                         | Unknown |
+| 4      | 4      |                         | Unknown |
+| 8      | 4      |                         | Unknown |
+| 12     | 4      | Unsigned 32-bit Integer | Filename String Offset |
+| 16     | 4      | Unsigned 32-bit Integer | Number of Unicode Characters in Filename |
+| 20     | 4      |                         | Unknown |
+| 24     | 8      |                         | NTFS File Reference of the Filename |
 
 ## Trace Chains Array
 Trace Chains Entry Records are 8 bytes each. Offsets are shown from the start of the Trace Chains entry record.
