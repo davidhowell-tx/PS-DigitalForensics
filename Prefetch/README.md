@@ -18,6 +18,8 @@ Info regarding Prefetch data structures was pulled from the following articles:
 
 http://www.forensicswiki.org/wiki/Windows_Prefetch_File_Format
 
+https://github.com/libyal/libscca/blob/master/documentation/Windows%20Prefetch%20File%20(PF)%20format.asciidoc
+
 Thanks to Yogesh Khatri for this info.
 
 http://www.swiftforensics.com/2010/04/the-windows-prefetchfile.html
