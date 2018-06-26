@@ -1,0 +1,11 @@
+Get-DFFilestream -Path C:\Users\David\ntuser.dat
+  $Volume = Get-VolumeFromPath -Path C:\Users\David\ntuser.dat
+  # $Volume = C
+  $FileStream = Get-DFFileStream -Volume $Volume
+  # Returns a System.IO.FileStream
+
+  # Parse C
+  # Parse Users
+  # Parse David
+  # Parse ntuser.dat
+    # dataruns
