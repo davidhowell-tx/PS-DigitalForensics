@@ -1,9 +1,8 @@
 Information Regarding Data Structures
 
 # Master Boot Record
-
 | Offset | Length | Value | Value Format             | Notes |
-| ------ | ------ | ===== |------------------------- | ----- |
+| ------ | ------ | ----- |------------------------- | ----- |
 | 0      | 440    |       |                          | Bootstrap code |
 | 440    | 4      |       | Hexadecimal String       | Drive Signature |
 | 444    | 2      | 00 00 |                          |  |
